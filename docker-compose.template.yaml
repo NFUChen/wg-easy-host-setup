@@ -5,6 +5,7 @@ services:
     image: ghcr.io/wg-easy/wg-easy
     container_name: wg-easy
     environment:
+      - WG_DEVICE=<NETWORK_INTERFACE> # e.g., eth0
       - LANG=en
       - WG_HOST=<PUBLIC_ID>
       - PASSWORD_HASH=<HASHED_PASSWORD>
